@@ -3,5 +3,11 @@
     "github_user": "0000000",
     "github_pass": "0000000",
     "github_repo": "gituser/project_name",
-    "app_directory": "/home/ubuntu/web-app"
+    "app_directory": "/home/ubuntu/web-app",
+    "docker_email": "0000000@myemail.com",
+    "docker_user": "0000000",
+    "docker_pass": "0000000",
+    "docker_image": "dockerhub_user/dockerhub_image",
+    "docker_container_name": "my-app",
+    "docker_port_forwarding": "80:80"
 }

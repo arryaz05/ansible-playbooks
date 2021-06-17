@@ -1,0 +1,20 @@
+---
+    - hosts: "{{ hosts_group }}"
+      become: true
+      tasks:
+      -
+          name: Log into Docker Hub registry
+          docker_login:
+              email: "{{ docker_email }}"
+              username: "{{ docker_user }}"
+              password: "{{ docker_pass }}"
+      - 
+          name: Run container with latest App
+          docker_container:
+              name: "{{ docker_container_name }}"
+              state: started
+              image: "{{ docker_image }}"
+              pull: true
+              ports:
+                  - "{{ docker_port_forwarding }}"
+      
