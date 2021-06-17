@@ -1,0 +1,7 @@
+{
+    "hosts_group": "webservers",
+    "github_user": "0000000",
+    "github_pass": "0000000",
+    "github_repo": "gituser/project_name",
+    "app_directory": "/home/ubuntu/web-app"
+}
